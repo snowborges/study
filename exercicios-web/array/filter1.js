@@ -5,7 +5,7 @@ const produtos = [
     { nome: 'Copo de Plástico', preco: 18.99, fragil: false }
 ]
 
-console.log(produtos.filter(function(p) {
+console.log(produtos.filter(function(p) { //FUNCTION(P) função q vai analisar cada produto dentro do array
     return false
 }))
 
