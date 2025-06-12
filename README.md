@@ -118,7 +118,7 @@ Usando [npm](https://www.npmjs.com):
 Usando [yarn](https://yarnpkg.com):
 
 ```bash
-> yarn install
+> yarn start
  ```
 <br> <!-- Espaço entre as seções -->
 ## Testes
