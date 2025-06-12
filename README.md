@@ -128,12 +128,12 @@ O **study** usa o framework de testes `{test_framework}`. Execute a suíte de te
 Usando [npm](https://www.npmjs.com):
 
 ```bash
-> npm start
+> npm test
 ```
 Usando [yarn](https://yarnpkg.com):
 
 ```bash
-> yarn install
+> yarn test
  ```
 ##
 ### ⬆ [Voltar ao topo](#conteúdo)
