@@ -15,15 +15,15 @@
 
     <script>
         $('div').hide(5000).show(5000).fadeOut(5000)
-        console.log($('div').get(1))
-        console.log($.isEmptyObject({ nome: null }))
-        console.log(jQuery.inArray(3, [1, 2, 3]))
+        console.log($('div').get(1)) // Obtém o segundo elemento div    
+        console.log($.isEmptyObject({ nome: null })) // Verifica se o objeto está vazio
+        console.log(jQuery.inArray(3, [1, 2, 3])) // Retorna o índice do valor 3 no array
 
         $.fn.fundoVerde = function () {
             this.css('background-color', 'green')
-            return this
+            return this // Retorna o objeto jQuery para permitir encadeamento de chamadas
         }
 
-        $('body').fundoVerde().fadeOut(1000)
+        $('body').fundoVerde().fadeOut(1000) // Aplica o fundo verde ao body e depois o esconde com fadeOut
     </script>
 </body>

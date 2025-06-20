@@ -53,20 +53,20 @@
         $('li').addClass('destaque')
         $('[wm-obrigatorio]').removeClass('destaque')
         $('li.opcional').removeClass('destaque')
-        $('div p span').addClass('destaque')
+        $('div p span').addClass('destaque') // Seleciona o span dentro do p dentro do div
 
         // Exclusivos jQuery
-        $('li:first').css('border', 'solid 3px yellow')
-        $('li:odd').css('border', 'solid 10px orange')
-        $('li:gt(1)').css('border', 'solid 10px white')
-        $('li:not(:last)').css('border', 'none')
-        $('li:contains("r")').css('background-color', 'black')
+        $('li:first').css('border', 'solid 3px yellow') // Seleciona o primeiro li
+        $('li:odd').css('border', 'solid 10px orange') // Seleciona os ímpares
+        $('li:gt(1)').css('border', 'solid 10px white')// Seleciona os li com índice maior que 1
+        $('li:not(:last)').css('border', 'none')// Seleciona todos os li, exceto o último
+        $('li:contains("r")').css('background-color', 'black')// Seleciona os li que contém a letra 'r'
 
-        $('form *').hide()
-        $('form :text').show()
-        $('form :password').show()
-        $('form :checkbox').show()
-        $('form :radio').show()
-        $('form :file').show()
+        $('form *').hide() // Seleciona todos os elementos dentro do form e esconde
+        $('form :text').show() // Seleciona os campos de texto e mostra
+        $('form :password').show() // Seleciona os campos de senha e mostra
+        $('form :checkbox').show() // Seleciona os checkboxes e mostra
+        $('form :radio').show() // Seleciona os radio buttons e mostra
+        $('form :file').show() // Seleciona os campos de arquivo e mostra
     </script>
 </body>

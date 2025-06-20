@@ -17,24 +17,24 @@
     <p class='numero'>5</p>
 
     <script>
-        $('#div1').append(', 2')
-        $('#div1').prepend('0, ')
+        $('#div1').append(', 2') // Adiciona ", 2" ao final do conteúdo de div1
+        $('#div1').prepend('0, ') // Adiciona "0, " ao início do conteúdo de div1
 
-        $('<span>, 3</span>').appendTo('#div1')
-        $('<span>-1, </span>').prependTo('#div1')
+        $('<span>, 3</span>').appendTo('#div1') // Adiciona um <span> com ", 3" ao final do conteúdo de div1
+        $('<span>-1, </span>').prependTo('#div1') // Adiciona um <span> com "-1, " ao início do conteúdo de div1
 
-        $('#div2').before('<p>Antes 2</p>')
+        $('#div2').before('<p>Antes 2</p>') // Adiciona um parágrafo com "Antes 2" antes de div2
         $('#div2').after('<p>Depois 2</p>')
 
         $('<p>Antes 3</p>').insertBefore('#div3')
         $('<p>Depois 3</p>').insertAfter('#div3')
 
-        // $('p.numero').wrap('<div>')
-        $('p.numero').wrapAll('<div id="div4">')
-        $("#div4").empty()
-        $('#div3, #div4').prev().remove()
+        // $('p.numero').wrap('<div>') // Envolve todos os parágrafos com uma div
+        $('p.numero').wrapAll('<div id="div4">') // Envolve todos os parágrafos com uma div com id 'div4'
+        $("#div4").empty() // Limpa o conteúdo da div4
+        $('#div3, #div4').prev().remove() // Remove o parágrafo anterior a div3 e div4
 
-        // $('<div>Substituto</div>').replaceAll('body > p')
+        // $('<div>Substituto</div>').replaceAll('body > p') // Substitui todos os parágrafos do body por um novo div
         // $('body > p').replaceWith('<div>Substituto</div>')
         $('body > p').replaceWith(function() {
             return $('<div>').html($(this).html()).append('!!!')

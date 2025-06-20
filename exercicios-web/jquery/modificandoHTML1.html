@@ -17,26 +17,26 @@
 
     <script>
         // Conteudo 1
-        $('#conteudo1').append('<p>1</p>')
+        $('#conteudo1').append('<p>1</p>') // Adiciona um parágrafo com o valor "1"
 
         // Conteudo 2
         const elementos = [
-            $('<li></li>').append('Arroz'),
-            $('<li>').append('Feijão'),
-            $('<li>').append('Carne')
+            $('<li></li>').append('Arroz'), // Cria um elemento <li></li> --forma extensa-- com o texto "Arroz"
+            $('<li>').append('Feijão'), // Cria um elemento <li> com o texto "Feijão"
+            $('<li>').append('Carne') //    Cria um elemento <li> com o texto "Carne"
         ]
 
         const lista = $('<ul><li>Sorvete</li></ul>')
-            .prepend(elementos)
-        $('#conteudo2').append(lista)
+            .prepend(elementos) // Adiciona os elementos criados anteriormente no início da lista
+        $('#conteudo2').append(lista) // Adiciona a lista ao conteudo2
 
         // Conteudo 3
-        $('#conteudo3').append(['<h1>1</h1>', '<h1>2</h1>'])
-            .prepend('<h1>0</h1>')
-        $('#conteudo3').html('<h1>123</h1>')
-        $('#conteudo3').text('<h1>123</h1>')
+        $('#conteudo3').append(['<h1>1</h1>', '<h1>2</h1>']) // Adiciona os elementos no final do conteudo3 
+            .prepend('<h1>0</h1>') // Adiciona os elementos no final e no início do conteudo3
+        $('#conteudo3').html('<h1>123</h1>') // Substitui todo o conteúdo do conteudo3 por um único <h1>123</h1>
+        $('#conteudo3').text('<h1>123</h1>') // Substitui todo o conteúdo do conteudo3 por um único texto <h1>123</h1>
 
         // Alterando todos
-        $('div[id]').html('<strong>Todos!</strong>')
+        $('div[id]').html('<strong>Todos!</strong>') // Substitui o conteúdo de todos os <div> que possuem ID por <strong>Todos!</strong>
     </script>
 </body>

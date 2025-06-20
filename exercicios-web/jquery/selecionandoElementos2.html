@@ -83,27 +83,27 @@
         <p>Cod3r Ensino</p>
     </footer>
     <script>
-        const comBorda = { 'border': 'solid 8px orange' }
-        const semBorda = { 'border': 'none' }
+        const comBorda = { 'border': 'solid 8px orange' } // Define a borda que será aplicada
+        const semBorda = { 'border': 'none' } // Define a remoção da borda
 
-        $('a[href="#link3"]').parent().css(comBorda).css(semBorda)
+        $('a[href="#link3"]').parent().css(comBorda).css(semBorda) // Seleciona o pai do link 3 e aplica a borda
 
-        $('li:last').prev().css(comBorda).css(semBorda)
-        $('a[href="#link3"]').parent().next().css(comBorda).css(semBorda)
+        $('li:last').prev().css(comBorda).css(semBorda) // Seleciona o penúltimo li e aplica a borda
+        $('a[href="#link3"]').parent().next().css(comBorda).css(semBorda) // Seleciona o próximo irmão do pai do link 3 e aplica a borda
 
-        $('a[href="#link1"]').parents().css(comBorda).css(semBorda)
-        $('a[href="#link1"]').parentsUntil($('body')).css(comBorda).css(semBorda)
+        $('a[href="#link1"]').parents().css(comBorda).css(semBorda) // Seleciona todos os ancestrais do link 1 e aplica a borda
+        $('a[href="#link1"]').parentsUntil($('body')).css(comBorda).css(semBorda) //Seleciona todos os ancestrais do link 1 até o body e aplica a borda
 
-        $('main').children().css(comBorda).css(semBorda)
+        $('main').children().css(comBorda).css(semBorda) // Seleciona todos os filhos diretos de main e aplica a borda
 
-        $('body').find('a').css(comBorda).css(semBorda)
+        $('body').find('a').css(comBorda).css(semBorda) // Seleciona todos os links dentro do body e aplica a borda
 
-        const elementoDOM = document.getElementsByClassName('menu')
-        $(elementoDOM).css(comBorda)
+        const elementoDOM = document.getElementsByClassName('menu') // Obtém o elemento DOM com a classe 'menu'
+        $(elementoDOM).css(comBorda) // Aplica a borda ao elemento DOM
 
-        $('main').children().each((i, e) => $(e).css(comBorda).css(semBorda))
+        $('main').children().each((i, e) => $(e).css(comBorda).css(semBorda)) // Seleciona todos os filhos diretos de main e aplica a borda a cada um
         $('li').each((i, e) => {
             $(e).css(comBorda)
-        })
+        }) // Seleciona todos os li e aplica a borda a cada um 
     </script>
 </body>
