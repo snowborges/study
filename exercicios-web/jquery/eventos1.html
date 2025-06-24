@@ -22,22 +22,22 @@
     <script>
         function mostrarPosicaoMouse(e) {
             $('#posicao').html(`x: ${e.clientX} y: ${e.clientY}`)
-        }
+        } // função para mostrar a posição do mouse
 
-        $('body').on('mousemove', mostrarPosicaoMouse)
+        $('body').on('mousemove', mostrarPosicaoMouse) // adiciona o evento de mousemove no body
         
         $('#posicao').mouseover(e => {
             $('body').off('mousemove', mostrarPosicaoMouse)
-        })
+        }) // remove o evento de mousemove do body 
 
         $('#posicao').mouseleave(e => {
             $('body').mousemove(mostrarPosicaoMouse)
-        })
+        }) // volta a mostrar a posição do mouse
 
         let cliques = 0
         $('body').click(e => {
-            $('#cliques').html(`Cliques: ${++cliques}`)
-        })
+            $('#cliques').html(`Cliques: ${++cliques}`) // incrementa o contador de cliques
+        }) // conta os cliques no body
 
         const backgroundOriginal = $('body').css('background-color')
 
@@ -49,6 +49,6 @@
             } else {
                 $('body').css('background-color', backgroundOriginal)
             }
-        })
+        }) // muda a cor de fundo do body com o valor do input
     </script>
 </body>

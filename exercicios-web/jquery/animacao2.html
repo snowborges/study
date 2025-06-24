@@ -40,8 +40,8 @@
 
         function girar(valor, duracao, callback) {
             $('div').animate({ transform: `+=${valor}` }, {
-                step: function (valor) {
-                    $(this).css('transform', `rotate(${valor}deg)`)
+                step: function (valor) { // função de callback que é chamada a cada passo da animação
+                    $(this).css('transform', `rotate(${valor}deg)`) // aplica a rotação ao elemento
                 },
                 duration: duracao
             }, 'linear', callback)

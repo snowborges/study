@@ -25,21 +25,21 @@
 
         const alternarDestaque = () => $('#div1').toggleClass('destaque')
         // $('#div1').on('mouseenter mouseleave', alternarDestaque)
-        $('#div1').hover(alternarDestaque, alternarDestaque)
+        $('#div1').hover(alternarDestaque, alternarDestaque) // alterna a classe destaque ao entrar e sair do mouse (chama uma função de entrada e outra de saída)
 
-        $('#div1').one('mouseenter', e => alert('Aviso IMPORTANTE: Obrigado!'))
-        $('#div1').dblclick(e => $('#div1').fadeOut(1000).fadeIn(1000))
+        $('#div1').one('mouseenter', e => alert('Aviso IMPORTANTE: Obrigado!')) // exibe um alerta ao entrar no mouse pela primeira vez
+        $('#div1').dblclick(e => $('#div1').fadeOut(1000).fadeIn(1000)) // esconde e mostra a div1 ao dar um duplo clique
 
         $(window).resize(function(e) {
             const l = $(window).width()
             const a = $(window).height()
             $('#resultado1').html(`Largura: ${l} e Altura: ${a}`)
-        })
+        }) // exibe a largura e altura da janela ao redimensionar
 
         $(':input').select(e => {
             const inicio = e.target.selectionStart
             const fim = e.target.selectionEnd
             $('#resultado2').html(e.target.value.substring(inicio, fim))
-        })
+        }) // exibe o texto selecionado no input    
     </script>
 </body>

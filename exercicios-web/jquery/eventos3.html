@@ -37,9 +37,9 @@
             const rt = e.relatedTarget ? e.relatedTarget.tagName : null
             div1.append(`<br>relatedTarget: ${rt}`)
 
-            div1.append(`<br>type: ${e.type}`)
-            div1.append(`<br>which: ${e.which}`)
-            div1.append(`<br>metaKey: ${e.metaKey}`)
+            div1.append(`<br>type: ${e.type}`) // se o evento é de mouseenter, mouseleave, keyup, etc.
+            div1.append(`<br>which: ${e.which}`) // se pressionou uma tecla (número do código da tecla)
+            div1.append(`<br>metaKey: ${e.metaKey}`) // se pressionou a tecla Meta (Windows) ou Command (Mac)
 
             div2.append(`pageX: ${e.pageX}`)
             div2.append(`<br>pageY: ${e.pageY}`)

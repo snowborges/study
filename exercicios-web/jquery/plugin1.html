@@ -26,9 +26,9 @@
         
         (function ($) {
             $.fn.interpretar = function () {
-                const retirarChaves = s => s.substring(2, s.length - 2)
-                const conteudo = $(this).html()
-                const expressoesComChaves = conteudo.match(/\{\{.+\}\}/g)
+                const retirarChaves = s => s.substring(2, s.length - 2) // remove as chaves
+                const conteudo = $(this).html() // obtém o conteúdo HTML do elemento
+                const expressoesComChaves = conteudo.match(/\{\{.+\}\}/g) // faz a busca por expressões entre chaves
                 const expressoes = expressoesComChaves.map(retirarChaves)
                 const resultados = expressoes.map(e => eval(e))
 

@@ -21,7 +21,7 @@
             minutoDezena, minutoUnidade, separadorMinuto,
             segundoDezena, segundoUnidade, mensagem)
 
-        const regex = new RegExp(/(\d\d):(\d\d):(\d\d)/)
+        const regex = new RegExp(/(\d\d):(\d\d):(\d\d)/) // expressão regular para capturar horas, minutos e segundos
         const horarioAlvo = regex.exec(opcoesFinais.horario)
         // console.log(horarioAlvo)
 
