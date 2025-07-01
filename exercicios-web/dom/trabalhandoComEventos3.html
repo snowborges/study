@@ -47,20 +47,20 @@
     <script>
         const items = document.querySelectorAll('[wm-dropzone] .item')
         items.forEach((item, index) => {
-            item.draggable = true
+            item.draggable = true // define q o item é arrastavel
             item.id = item.id || `draggable-item-${index}`
             item.ondragstart = e =>
-                e.dataTransfer.setData('item-id', e.target.id)
+                e.dataTransfer.setData('item-id', e.target.id) // define o item que sera arrastado (id)
         })
 
         const dropzones = document.querySelectorAll('[wm-dropzone]')
         dropzones.forEach(dropzone => {
             dropzone.ondragover = e => e.preventDefault()
-            dropzone.ondrop = function(e) {
-                const id = e.dataTransfer.getData('item-id')
-                const item = document.getElementById(id)
-                // e.target.appendChild(item)
-                dropzone.appendChild(item)
+            dropzone.ondrop = function(e) { // quando soltar o item
+                const id = e.dataTransfer.getData('item-id') // pega o id do item que foi arrastado
+                const item = document.getElementById(id) // pega o item que foi arrastado
+                // e.target.appendChild(item) // adiciona o item na dropzone nesse caso o item é colocado dentro de outro elemento (wm-dropzone)
+                dropzone.appendChild(item) // adiciona o item na dropzone
             }
         })
     </script>
