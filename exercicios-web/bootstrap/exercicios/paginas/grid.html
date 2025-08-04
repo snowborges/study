@@ -23,17 +23,17 @@
     <hr>
 
     <!-- Grid Básica -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col bg-primary">1</div>
-            <div class="col bg-danger">2</div>
-            <div class="col bg-warning">3</div>
-            <div class="col bg-info">4</div>
-            <div class="col bg-secondary">5</div>
+    <div class="container-fluid"> <!-- container-fluid é um container que ocupa 100% da largura da tela --> 
+        <div class="row"> <!-- row é uma linha -->
+            <div class="col bg-primary">1</div> <!-- col é uma coluna -->   <!-- bg é background -->
+            <div class="col bg-danger">2</div> <!-- danger é vermelho, acessar cores na documentação de bootstrap -->
+            <div class="col bg-warning">3</div> <!-- warning é amarelo -->
+            <div class="col bg-info">4</div> <!-- info é azul -->
+            <div class="col bg-secondary">5</div> <!-- secondary é cinza -->
         </div>
-        <div class="row mt-3">
+        <div class="row mt-3"> <!-- mt-3 é margin-top de 3 -->
             <div class="col bg-danger">1</div>
-            <div class="col-4 bg-warning">2</div>
+            <div class="col-4 bg-warning">2</div> <!-- col-4 é uma coluna de 4 colunas -->
             <div class="col-5 bg-info">3</div>
             <div class="col bg-primary">4</div>
         </div>
@@ -45,8 +45,8 @@
     <!-- Grid Responsiva -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-primary">1</div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-danger">2</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-primary">1</div> <!-- col-12 é uma coluna de 12 colunas -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-danger">2</div> <!-- sm small, md medium, lg large, xl extra large  (o numero após a abreviação define o tamanho da coluna de acordo com o tamanho da tela)-->
             <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-warning">3</div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-info">4</div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1 bg-success">5</div>
@@ -92,7 +92,7 @@
     <!-- Offset -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3 offset-7 bg-primary">1</div>
+            <div class="col-3 offset-7 bg-primary">1</div> <!-- offset é o deslocamento da coluna 7 (7 colunas a partir da esquerda)-->
             <div class="col-4 offset-3 bg-danger">2</div>
             <div class="col-6 offset-1 bg-warning">3</div>
         </div>
