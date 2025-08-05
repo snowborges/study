@@ -168,13 +168,13 @@
 </h1>
 <hr>
 
-<!-- Slider -->
+<!-- Slider --> <!-- O slider é um componente que permite exibir uma série de imagens ou conteúdo em um formato de carrossel -->    
 <div>
-    <div id="slider" class="carousel slide" data-ride="carousel">
+    <div id="slider" class="carousel slide" data-ride="carousel"> <!-- data-ride="carousel" ativa o slider -->  
         <div class="carousel-inner bg-dark">
             <div class="carousel-item active">
                 <img src="/imgs/slide1.png" alt="Slide1"
-                    class="d-block mx-auto">
+                    class="d-block mx-auto"> <!-- d-block mx-auto centraliza a imagem -->
             </div>
             <div class="carousel-item">
                 <img src="/imgs/slide2.png" alt="Slide2"
@@ -196,7 +196,7 @@
     </div>
 </div>
 
-<h1 class="mt-5">7. Accordion -
+<h1 class="mt-5">7. Accordion - <!-- O Accordion é um componente que permite exibir conteúdo em seções expansíveis, onde apenas uma seção pode estar aberta por vez. -->
     <small>
         <a href="https://getbootstrap.com/docs/4.0/components/collapse/" target="_black">Documentação Oficial</a>
     </small>
@@ -214,7 +214,7 @@
                     </button>
                 </h5>
             </div>
-            <div class="collapse" id="resposta1" data-parent="#accordion">
+            <div class="collapse" id="resposta1" data-parent="#accordion"> <!-- data-parent="#accordion" garante que apenas uma resposta esteja aberta por vez -->
                 <div class="card-body">
                     Posso dizer? :)
                 </div>
@@ -249,5 +249,5 @@
 
 <script>
     // funciona?
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip() // Inicializa o tooltip  
 </script>
