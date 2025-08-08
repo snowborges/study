@@ -5,7 +5,8 @@ const chineses = f => f.pais === 'China'
 const mulheres = f => f.genero === 'F'
 const menorSalario = (func, funcAtual) => {
     return func.salario < funcAtual.salario ? func : funcAtual
-}
+} // primeiro parametro é o acumulador segundo parametro é o valor atual 
+// ? é uma estrutura condicional e : é o else. (condição ? se verdadeiro : se falso)      
 
 axios.get(url).then(response => {
     const funcionarios = response.data
